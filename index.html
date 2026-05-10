@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mother's Day!</title>
+    <style>
+    :root {
+        --primary-pink: #ffafbd;
+        --dark-pink: #ffc3a0;
+        --text-color: #4a4a4a;
+        --accent: #d81b60;
+    }
+
+    body {
+        margin: 0;
+        padding: 40px 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* Restores the background color */
+        background: linear-gradient(to bottom, var(--primary-pink), var(--dark-pink)) !important;
+        background-attachment: fixed; /* Keeps the color smooth while scrolling */
+        
+        /* Fixes the layout to stack vertically */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        color: var(--text-color);
+    }
+
+    .card {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        text-align: center;
+        max-width: 500px;
+        width: 90%;
+        margin-bottom: 30px; /* Space between message and photos */
+    }
+
+    h1 { color: var(--accent); font-size: 2.5rem; margin-bottom: 1rem; }
+
+    .heart {
+        color: #e91e63;
+        font-size: 50px;
+        animation: beat .25s infinite alternate;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    @keyframes beat { to { transform: scale(1.1); } }
+
+    /* Gallery Layout */
+    .gallery-container {
+        max-width: 800px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .photo-frame {
+        background: white;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .photo-frame img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .caption {
+        margin-top: 10px;
+        font-style: italic;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>Happy Mother's Day!</h1>
+        <p>
+            To the world, you are a mother. <br>
+            But to me, you are the world.
+        </p>
+        <p>
+            Thank you for your endless love, patience, and for always believing in me. 
+            I am so grateful to have you in my life.
+        </p>
+        <div class="footer">— With love, Janu.</div>
+    </div>
+ 
+    <!-- PHOTO GALLERY START -->
+<style>
+    .gallery-container {
+        max-width: 800px;
+        width: 90%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    .photo-frame {
+        background: white;
+        padding: 12px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        text-align: center;
+    }
+
+    .photo-frame:hover {
+        transform: translateY(-5px) rotate(1deg);
+    }
+
+    .photo-frame img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .caption {
+        margin-top: 10px;
+        font-size: 0.95rem;
+        color: #666;
+        font-style: italic;
+    }
+</style>
+
+<div class="gallery-container">
+    
+    <!-- Photo 1 -->
+    <div class="photo-frame">
+        <img src="DSC08026.JPG" alt="Mom Memory 1">
+        <div class="caption"></div>
+    </div>
+
+    <!-- Photo 2 -->
+    <div class="photo-frame">
+        <img src="IMG_20240911_215719403_HDR.jpg" alt="Mom Memory 2">
+        <div class="caption"></div>
+    </div>
+
+    <!-- Photo 3 -->
+    <div class="photo-frame">
+        <img src="IMG_20251026_082038401_HDR_AE.jpg" alt="Mom Memory 3">
+        <div class="caption"></div>
+    </div>
+
+</div>
+<!-- PHOTO GALLERY END -->
+</body>
+</html>
